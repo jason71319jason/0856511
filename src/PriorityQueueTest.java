@@ -27,7 +27,7 @@ public class PriorityQueueTest {
     @Parameterized.Parameters
     public static Collection collection() {
         return Arrays.asList(new Integer[][][] {
-                { {1, 2, 3} , { 1, 3, 2} },
+                { {1, 2, 3} , { 1, 2, 3} },
                 { {2, 1, 3} , { 1, 2, 3} },
                 { {2, 3, 1} , { 1, 2, 3} },
                 { {1, 3, 2} , { 1, 2, 3} },
