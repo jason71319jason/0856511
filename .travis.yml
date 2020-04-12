@@ -1,0 +1,17 @@
+language: java
+
+dist: trusty
+jdk:
+    - oraclejdk9
+addons:
+    apt:
+        packages:
+            - junit4
+script:
+    - make
+    - make test
+branches:
+    only:
+        - master
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
